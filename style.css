@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+body {
+    font-family: 'Poppins';
+    background-color: black;    
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 90px;
+    color: white;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 48px;
+    display: flex;
+    text-shadow: 3px 4px 5px black;
+    color: white;
+    margin-bottom: 8px;    
+    transition: 0.5s;
+    margin-top: 100px;
+}
+
+h1:hover {
+    transform: scale(1.3);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 23px;
+    max-width: 500px;
+}
+
+main span {
+    color: white;
+    font-size: 21px;
+}
+
+.slider {
+    appearance: none; /*-webkit-appearance está se tornando uma tag obsoleta*/
+    background-color: #ffffff;
+    color: #09F544;
+    border-radius: 14px;
+    height: 20px;
+    outline: none;
+    margin-top: 10px;
+    width: 370px;
+}
+
+#contagem {
+    display: flex;
+    flex-direction: row;
+    font-size: medium;
+    font-weight: 700;
+    color: white;
+}
+
+#value {
+    display: inline-block;
+    justify-content: space-between;
+    font-weight: 700;
+    color: #09F544;
+    text-shadow: 2px 3px 3px black;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#button {
+    background-color: #09F544;    
+    border-radius: 6px;
+    padding: 8px;
+    font-size: medium;
+    font-weight: 700;
+    margin-top: 18px;
+    margin-bottom: 5px;
+    transition: 0.4s;  
+}
+
+#button:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.06); 
+    cursor: pointer;
+}
+
+.container-password {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     margin: 14px 0px;
+     cursor: pointer;
+}
+
+.title {
+    text-align: center;
+    font-size: 16px;
+}
+
+.password {
+    background-color: white;
+    width: 100%;
+    border-radius: 5px 18px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: black;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.password:hover {
+    transform: scale(1.05);
+}
+
+.tooltip {
+    color: white;
+    position: relative;
+    top: 10px;
+    padding: 6px 8px;
+    font-size: 15px;
+    background-color: rgba(75, 74, 74, 0.418);
+    width: 88%;
+    text-align: center;
+    padding: 8px;
+    border-radius: 8px 18px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+
+}
+
+#container-password:hover .tooltip {
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
